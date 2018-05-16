@@ -1,0 +1,15 @@
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8rem 1.8rem;
+    color: #212121;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+  }
+}
