@@ -1,12 +1,14 @@
 // COLORS
-$color-black: #111;
-$color-white: #f5f5f5;
+$color-white: #fafafa;
+$color-grey-light: #eee;
+$color-grey-medium: #e0e0e0;
+$color-black: #212121;
 
 // LAYOUT
 // Spacers
-$spacer-small: 1rem;
+$spacer-small: 1.2rem;
 $spacer-medium: 2rem;
-$spacer-large: 3rem;
+$spacer-large: 3.2rem;
 
 // Float grid
-$gutter-vertical: 2rem;
+$gutter-horizontal: $spacer-small;
