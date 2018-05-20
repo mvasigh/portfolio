@@ -1,6 +1,13 @@
 .separator {
   width: 6rem;
   border: 0;
-  background-color: #212121;
   height: 0.4rem;
+
+  &--black {
+    background-color: $color-black;
+  }
+
+  &--white {
+    background-color: $color-white;
+  }
 }
