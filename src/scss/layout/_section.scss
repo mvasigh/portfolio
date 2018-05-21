@@ -1,5 +1,7 @@
 .section {
   padding: $spacer-large 0;
+  animation: fade-in-up 0.5s ease-out 1.6s;
+  animation-fill-mode: backwards;
 
   &__title {
     font-size: 2.8rem;
@@ -21,6 +23,10 @@
       $color-white
     );
     height: 45vh;
+    animation: none;
+    @include for-phone-only {
+      height: 75vh;
+    }
   }
 }
 .hero {
@@ -34,24 +40,25 @@
       display: inline-block;
       font-weight: 900;
       font-size: 3.2rem;
-      animation: reveal-right 0.6s ease-out 0.2s;
+      animation: reveal-right 0.5s ease-out 0.2s;
       animation-fill-mode: backwards;
       @include for-tablet-portrait-up {
         font-size: 3.6rem;
       }
     }
     &--sub {
-      display: block;
+      display: inline-block;
       font-size: 2.2rem;
-      animation: reveal-right 1.6s ease 0.6s;
+      animation: reveal-right 0.6s ease-out 0.7s;
       animation-fill-mode: backwards;
       @include for-tablet-portrait-up {
+        margin-left: $spacer-medium;
         font-size: 2.8rem;
       }
     }
   }
   &__description {
-    animation: reveal-right 0.9s ease-out 0.8s;
+    animation: fade-in-up 0.5s ease-out 0.8s;
     animation-fill-mode: backwards;
   }
   &__links {
