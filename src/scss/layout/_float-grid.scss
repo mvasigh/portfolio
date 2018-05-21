@@ -1,6 +1,13 @@
 .float-row {
   @include clearfix;
 
+  [class^='col-'] {
+    display: block;
+    &:not(:last-child) {
+      margin-bottom: $spacer-large;
+    }
+  }
+
   @include for-tablet-landscape-up {
     [class^='col-'] {
       float: left;
