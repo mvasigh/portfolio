@@ -2,8 +2,6 @@
   width: 6rem;
   border: 0;
   height: 0.4rem;
-  animation: reveal-right 0.4s ease-out 0.3s;
-  animation-fill-mode: backwards;
 
   &--black {
     background-color: $color-black;
@@ -11,9 +9,5 @@
 
   &--white {
     background-color: $color-white;
-  }
-
-  &--dark {
-    background-color: $color-grey-dark;
   }
 }

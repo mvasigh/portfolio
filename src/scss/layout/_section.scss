@@ -1,7 +1,5 @@
 .section {
-  padding: $spacer-large 0;
-  animation: fade-in-up 0.5s ease-out 1.6s;
-  animation-fill-mode: backwards;
+  padding: 3.2rem 0;
 
   &__title {
     font-size: 2.8rem;
@@ -9,24 +7,21 @@
   }
 
   &__subtitle {
-    font-size: 1.8rem;
-    font-weight: 700;
-    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: 2px;
   }
 
   &--hero {
     position: relative;
     background-color: $color-grey-light;
     background-image: linear-gradient(
-      to right top,
-      $color-grey-light,
-      $color-white
+      to right bottom,
+      $color-white,
+      $color-grey-light
     );
-    height: 45vh;
-    animation: none;
-    @include for-phone-only {
-      height: 75vh;
-    }
+    height: 65vh;
   }
 }
 .hero {
@@ -37,29 +32,20 @@
   }
   &__title {
     &--main {
-      display: inline-block;
+      display: block;
       font-weight: 900;
       font-size: 3.2rem;
-      animation: reveal-right 0.5s ease-out 0.2s;
-      animation-fill-mode: backwards;
       @include for-tablet-portrait-up {
         font-size: 3.6rem;
       }
     }
     &--sub {
-      display: inline-block;
+      display: block;
       font-size: 2.2rem;
-      animation: reveal-right 0.6s ease-out 0.7s;
-      animation-fill-mode: backwards;
       @include for-tablet-portrait-up {
-        margin-left: $spacer-medium;
         font-size: 2.8rem;
       }
     }
-  }
-  &__description {
-    animation: fade-in-up 0.5s ease-out 0.8s;
-    animation-fill-mode: backwards;
   }
   &__links {
     list-style-type: none;

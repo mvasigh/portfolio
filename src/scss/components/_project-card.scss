@@ -2,17 +2,13 @@
   width: 100%;
   z-index: -99;
   color: $color-white;
-  padding: $spacer-large $spacer-huge;
+  padding: 3.6rem 4.8rem;
   background-image: linear-gradient(
     to top right,
     $color-black,
     $color-grey-dark
   );
 
-  @include for-tablet-landscape-up {
-    width: $container-width;
-    margin: 0 auto;
-  }
   &--body {
     width: 60%;
   }
