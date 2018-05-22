@@ -6,7 +6,8 @@
   "scripts": {
     "build:css": "node-sass ./src/scss/main.scss ./dist/css/style.css",
     "build:js": "browserify ./src/js/main.js > ./dist/js/script.js",
-    "build:html": "ejs-cli --base-dir src/views/pages/ '*.ejs' --out dist/",
+    "build:html":
+      "ejs-cli --base-dir src/views/pages/ '*.ejs' --out dist/ --options ./site.config.json",
     "build": "npm run build:js && npm run build:css && npm run build:html",
     "build:watch": "watch 'npm run build' ./src"
   },
