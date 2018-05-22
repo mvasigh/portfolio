@@ -6,10 +6,15 @@ $color-grey-dark: #424242;
 $color-black: #212121;
 
 // LAYOUT
+// =======
+// Structure
+$container-width: 80rem;
+
 // Spacers
 $spacer-small: 1.2rem;
-$spacer-medium: 2rem;
-$spacer-large: 3.2rem;
+$spacer-medium: 2.4rem;
+$spacer-large: 3.6rem;
+$spacer-huge: 4.8rem;
 
 // Float grid
 $gutter-horizontal: $spacer-medium;
