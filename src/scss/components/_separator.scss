@@ -1,8 +1,8 @@
 .separator {
-  width: 6rem;
+  width: 8rem;
   border: 0;
   height: 0.4rem;
-
+  text-align: left;
   &--black {
     background-color: $color-black;
   }
