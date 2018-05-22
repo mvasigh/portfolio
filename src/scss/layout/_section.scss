@@ -1,5 +1,5 @@
 .section {
-  padding: 3.2rem 0;
+  padding: $spacer-large 0;
 
   &__title {
     font-size: 2.8rem;
@@ -7,21 +7,23 @@
   }
 
   &__subtitle {
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    font-weight: 800;
-    letter-spacing: 2px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
   }
 
   &--hero {
     position: relative;
     background-color: $color-grey-light;
     background-image: linear-gradient(
-      to right bottom,
-      $color-white,
-      $color-grey-light
+      to right top,
+      $color-grey-light,
+      $color-white
     );
-    height: 65vh;
+    height: 75vh;
+    @include for-tablet-landscape-up {
+      height: 45vh;
+    }
   }
 }
 .hero {
@@ -37,13 +39,19 @@
       font-size: 3.2rem;
       @include for-tablet-portrait-up {
         font-size: 3.6rem;
+        display: inline-block;
       }
     }
     &--sub {
       display: block;
       font-size: 2.2rem;
+      font-weight: 300;
       @include for-tablet-portrait-up {
         font-size: 2.8rem;
+      }
+      @include for-tablet-landscape-up {
+        margin-left: $spacer-small;
+        display: inline-block;
       }
     }
   }
