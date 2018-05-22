@@ -2,16 +2,21 @@
   width: 100%;
   z-index: -99;
   color: $color-white;
-  padding: $spacer-large $spacer-huge;
-  background-image: linear-gradient(
-    to top right,
-    $color-black,
-    $color-grey-dark
-  );
+  padding: $spacer-large $spacer-medium;
 
   @include for-tablet-landscape-up {
     max-width: $container-width;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: $spacer-large $spacer-huge;
+  }
+
+  &--dark {
+    background-image: linear-gradient(
+      to top right,
+      $color-black,
+      $color-grey-dark
+    );
   }
   &--body {
     width: 60%;
