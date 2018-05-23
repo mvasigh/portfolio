@@ -1,3 +1,14 @@
 {
-  "title": "Mehdi Vasigh | Full-stack web developer"
+  "title": "Mehdi Vasigh | Full-stack web developer",
+  "projects": [
+    {
+      "title": "DFC Guide",
+      "description":
+        "Searchable community resources database and guidebook for health care providers in the Houston area.",
+      "stack": ["Node.js", "Express", "MongoDB", "Bulma.io", "Sass"],
+      "repo": "#",
+      "live": "#",
+      "classSuffix": "dfcguide"
+    }
+  ]
 }
