@@ -4,13 +4,6 @@
   color: $color-white;
   padding: $spacer-large $spacer-medium;
 
-  @include for-tablet-landscape-up {
-    max-width: $container-width;
-    margin-left: auto;
-    margin-right: auto;
-    padding: $spacer-large $spacer-huge;
-  }
-
   &--dark {
     background-image: linear-gradient(
       to top right,
@@ -20,5 +13,14 @@
   }
   &--body {
     width: 60%;
+  }
+  @include for-tablet-landscape-up {
+    max-width: $container-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding: $spacer-large $spacer-huge;
+    &:not(:last-child) {
+      margin-bottom: $spacer-large;
+    }
   }
 }

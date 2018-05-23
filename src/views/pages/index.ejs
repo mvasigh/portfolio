@@ -71,58 +71,32 @@
       </h2>
       <hr class="separator separator--black mb-lg mt-sm">
     </div>
-    <div class="project-card project-card--dark mb-lg">
-      <div class="project-card--body">
-        <h2 class="project-card--title">Project Title</h2>
-        <hr class="separator separator--white mt-sm mb-md">
-        <p class="project-card--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, eius? Non sit, reiciendis accusantium reprehenderit
-          ut qui laboriosam deleniti est.</p>
-        <div class="project-card--stack mb-sm">
+    <% projects.forEach(project => { %>
+      <div class="project-card project-card--<%= project.classSuffix %>">
+        <div class="project-card--body">
+          <h2 class="project-card--title"><%= project.title %></h2>
+          <hr class="separator separator--white mt-sm mb-md">
+          <p class="project-card--description mb-md">
+            <%= project.description %>
+          </p>
+          <div class="project-card--stack mb-sm">
+            <h3 class="section__subtitle">Technologies used:</h3>
+            <div class="tag-group">
+              <% project.stack.forEach(tech => { %>
+                <span class="tag-group__tag tag-group__tag--card">
+                  <%= tech %>
+                </span>
+              <% }) %>
+            </div>
+          </div>
+          <div class="project-card--buttons">
+            <a href="<%= project.repo %>" class="btn btn--project mr-sm">View Code</a>
+            <a href="<%= project.live %>" class="btn btn--project">Live Demo</a>
+          </div>
+        </div>
+      </div>
+    <% }) %>
 
-        </div>
-        <div class="project-card--buttons">
-          <a href="#" class="btn btn--project mr-sm">View Code</a>
-          <a href="#" class="btn btn--project">Live Demo</a>
-        </div>
-      </div>
-    </div>
-    <div class="project-card project-card--dfcguide mb-lg">
-      <div class="project-card--body">
-        <h2 class="project-card--title">DFC Guide</h2>
-        <hr class="separator separator--white mt-sm mb-md">
-        <p class="project-card--description mb-md">Searchable community resources database and guidebook for health care providers in the Houston area.</p>
-        <div class="project-card--stack mb-sm">
-          <h3 class="section__subtitle">Technologies used:</h3>
-          <div class="tag-group">
-            <span class="tag-group__tag tag-group__tag--card">Node.js</span>
-            <span class="tag-group__tag tag-group__tag--card">Express</span>
-            <span class="tag-group__tag tag-group__tag--card">MongoDB</span>
-          </div>
-        </div>
-        <div class="project-card--buttons">
-          <a href="#" class="btn btn--project mr-sm">View Code</a>
-          <a href="#" class="btn btn--project">Live Demo</a>
-        </div>
-      </div>
-    </div>
-    <div class="project-card project-card--hoops mb-lg">
-      <div class="project-card--body">
-        <h2 class="project-card--title">Hoops Player Comparison</h2>
-        <hr class="separator separator--white mt-sm mb-md">
-        <p class="project-card--description mb-md">Searchable community resources database and guidebook for health care providers in the Houston area.</p>
-        <div class="project-card--stack mb-sm">
-          <h3 class="section__subtitle">Technologies used:</h3>
-          <div class="tag-group">
-            <span class="tag-group__tag tag-group__tag--card">JavaScript</span>
-            <span class="tag-group__tag tag-group__tag--card">Bulma.io</span>
-          </div>
-        </div>
-        <div class="project-card--buttons">
-          <a href="#" class="btn btn--project mr-sm">View Code</a>
-          <a href="#" class="btn btn--project">Live Demo</a>
-        </div>
-      </div>
-    </div>
   </section>
 
   <% include ../partials/_footer %>
