@@ -1,5 +1,27 @@
 {
   "title": "Mehdi Vasigh | Full-stack web developer",
+  "skills": {
+    "comfortable": [
+      "HTML5",
+      "CSS3",
+      "Sass",
+      "JavaScript (ES6+)",
+      "Node.js",
+      "Express",
+      "NPM",
+      "Git",
+      "MongoDB"
+    ],
+    "working": [
+      "React",
+      "Redux",
+      "Vue",
+      "Gulp",
+      "Webpack",
+      "Python",
+      "PostgreSQL"
+    ]
+  },
   "projects": [
     {
       "title": "DFC Guide",

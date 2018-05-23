@@ -40,20 +40,15 @@
           </p>
           <h3 class="section__subtitle mb-sm">Comfortable With</h3>
           <div class="tag-group mb-md">
-            <span class="tag-group__tag tag-group__tag--light">HTML5</span>
-            <span class="tag-group__tag tag-group__tag--light">CSS3</span>
-            <span class="tag-group__tag tag-group__tag--light">JavaScript (ES6+)</span>
-            <span class="tag-group__tag tag-group__tag--light">Node.js</span>
-            <span class="tag-group__tag tag-group__tag--light">Express</span>
-            <span class="tag-group__tag tag-group__tag--light">NPM</span>
-            <span class="tag-group__tag tag-group__tag--light">Git</span>
+            <% skills.comfortable.forEach(skill => { %>
+              <span class="tag-group__tag tag-group__tag--light"><%= skill %></span>            
+            <% }) %>
           </div>
           <h3 class="section__subtitle mb-sm">Working Knowledge</h3>
           <div class="tag-group">
-            <span class="tag-group__tag tag-group__tag--light">React</span>
-            <span class="tag-group__tag tag-group__tag--light">Vue</span>
-            <span class="tag-group__tag tag-group__tag--light">Gulp</span>
-            <span class="tag-group__tag tag-group__tag--light">Webpack</span>
+            <% skills.working.forEach(skill => { %>
+              <span class="tag-group__tag tag-group__tag--light"><%= skill %></span>            
+            <% }) %>
           </div>
         </div>
         <div class="col-1-of-3">
