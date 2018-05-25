@@ -3,6 +3,12 @@ body {
   font-family: $font-body;
   font-weight: 400;
   color: $color-black;
+  line-height: 2.2rem;
+}
+
+a:link,
+a:visited {
+  color: $color-black;
 }
 
 h1,
