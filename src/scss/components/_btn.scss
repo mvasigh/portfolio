@@ -1,6 +1,7 @@
 .btn {
   &:link,
   &:visited {
+    position: relative;
     display: inline-block;
     text-decoration: none;
     padding: 0.8rem 1.2rem;
@@ -14,8 +15,10 @@
   }
 
   &--hero {
-    color: $color-black;
-    position: relative;
+    &:link,
+    &:visited {
+      color: $color-black;
+    }
 
     &:hover {
       color: $color-white;
@@ -39,8 +42,10 @@
   }
 
   &--project {
-    color: $color-white;
-    position: relative;
+    &:link,
+    &:visited {
+      color: $color-white;
+    }
 
     &:hover {
       color: $color-black;
