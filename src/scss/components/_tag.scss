@@ -12,9 +12,23 @@
       background-color: $color-grey-light;
     }
 
+    &--yellow {
+      color: $color-grey-dark;
+      background-color: $color-yellow;
+    }
+
+    &--blue {
+      color: $color-white;
+      background-color: $color-blue;
+    }
+
     &--card {
       color: $color-white;
       background-color: rgba($color-black, 0.5);
+    }
+
+    @include for-tablet-portrait-up {
+      font-size: 1.2rem;
     }
   }
 }
