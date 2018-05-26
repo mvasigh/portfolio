@@ -3,7 +3,10 @@ body {
   font-family: $font-body;
   font-weight: 400;
   color: $color-black;
-  line-height: 2.2rem;
+}
+
+p {
+  line-height: 2.3rem;
 }
 
 a:link,
