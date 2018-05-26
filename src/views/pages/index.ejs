@@ -41,19 +41,42 @@
           <h3 class="section__subtitle mb-sm">Comfortable With</h3>
           <div class="tag-group mb-md">
             <% skills.comfortable.forEach(skill => { %>
-              <span class="tag-group__tag tag-group__tag--light"><%= skill %></span>            
-            <% }) %>
+              <span class="tag-group__tag tag-group__tag--light">
+                <%= skill %>
+              </span>
+              <% }) %>
           </div>
           <h3 class="section__subtitle mb-sm">Working Knowledge</h3>
           <div class="tag-group">
             <% skills.working.forEach(skill => { %>
-              <span class="tag-group__tag tag-group__tag--light"><%= skill %></span>            
-            <% }) %>
+              <span class="tag-group__tag tag-group__tag--light">
+                <%= skill %>
+              </span>
+              <% }) %>
           </div>
         </div>
         <div class="col-1-of-3">
-          <div class="box">
-            <h3 class="section__subtitle">Hello world</h3>
+          <div class="box box--light">
+            <p class="pull-right">
+              <a href="https://www.codewars.com/users/vasighm1">
+                View profile
+              </a>
+            </p>
+            <h3 class="section__subtitle mb-sm">Codewars</h3>
+            <div class="mb-sm" id="cw-card">
+              <p>
+                <strong>Leaderboard: </strong>
+                <span id="cw-leaderboard"></span>
+              </p>
+              <p class="mb-sm">
+                <strong>Kata: </strong>
+                <span id="cw-completed"></span>
+              </p>
+              <div class="tag-group">
+                <span class="tag-group__tag tag-group__tag--yellow">JS 5 kyu (274)</span>
+                <span class="tag-group__tag tag-group__tag--blue">Py 4 kyu (438)</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -69,19 +92,21 @@
     <% projects.forEach(project => { %>
       <div class="project-card project-card--<%= project.classSuffix %>">
         <div class="project-card--body">
-          <h2 class="project-card--title"><%= project.title %></h2>
+          <h2 class="project-card--title">
+            <%= project.title %>
+          </h2>
           <hr class="separator separator--white mt-sm mb-md">
           <p class="project-card--description mb-md">
             <%= project.description %>
           </p>
           <div class="project-card--stack mb-sm">
-            <h3 class="section__subtitle">Technologies used:</h3>
+            <h3 class="section__subtitle mb-sm">Technologies used:</h3>
             <div class="tag-group">
               <% project.stack.forEach(tech => { %>
                 <span class="tag-group__tag tag-group__tag--card">
                   <%= tech %>
                 </span>
-              <% }) %>
+                <% }) %>
             </div>
           </div>
           <div class="project-card--buttons">
@@ -90,7 +115,7 @@
           </div>
         </div>
       </div>
-    <% }) %>
+      <% }) %>
 
   </section>
 
