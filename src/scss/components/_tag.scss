@@ -1,9 +1,9 @@
 .tag-group {
   &__tag {
     display: inline-block;
-    font-family: $font-heading;
+    font-family: $font-body;
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: 400;
     padding: 0.6rem 0.8rem;
     margin-top: 0.6rem;
 
@@ -25,10 +25,6 @@
     &--card {
       color: $color-white;
       background-color: rgba($color-black, 0.5);
-    }
-
-    @include for-tablet-portrait-up {
-      font-size: 1.6rem;
     }
   }
 }
