@@ -24,6 +24,10 @@
       height: 45vh;
     }
   }
+  &--footer {
+    color: $color-white;
+    background-color: $color-black;
+  }
 }
 .hero {
   &__body {
