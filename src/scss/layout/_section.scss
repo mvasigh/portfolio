@@ -54,14 +54,21 @@
       }
     }
   }
-  &__links {
+  &__buttons {
     list-style-type: none;
     margin-top: $spacer-medium;
-    text-align: center;
+    text-align: right;
     li {
-      display: inline-block;
-      &:not(:last-child) {
-        margin-right: $spacer-small;
+      margin-top: $spacer-small;
+    }
+    @include for-tablet-portrait-up {
+      text-align: center;
+      li {
+        margin-top: 0;
+        display: inline-block;
+        &:not(:last-child) {
+          margin-right: $spacer-small;
+        }
       }
     }
   }
