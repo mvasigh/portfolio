@@ -10,9 +10,11 @@
 @import './base/utilities';
 
 // Layout
+@import './layout/container';
 @import './layout/float-grid';
 @import './layout/section';
-@import './layout/container';
+@import './layout/hero';
+@import './layout/footer';
 
 // Components
 @import './components/separator';

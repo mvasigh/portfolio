@@ -1,0 +1,48 @@
+.hero {
+  &__body {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__title {
+    &--main {
+      display: block;
+      font-weight: 900;
+      font-size: 3.4rem;
+      @include for-tablet-portrait-up {
+        font-size: 4.2rem;
+        display: inline-block;
+      }
+    }
+    &--sub {
+      display: block;
+      font-size: 2.2rem;
+      font-weight: 300;
+      @include for-tablet-portrait-up {
+        font-size: 3rem;
+      }
+      @include for-tablet-landscape-up {
+        margin-left: $spacer-small;
+        display: inline-block;
+      }
+    }
+  }
+  &__buttons {
+    list-style-type: none;
+    margin-top: $spacer-medium;
+    text-align: right;
+    li {
+      margin-top: $spacer-small;
+    }
+    @include for-tablet-portrait-up {
+      text-align: center;
+      li {
+        margin-top: 0;
+        display: inline-block;
+        &:not(:last-child) {
+          margin-right: $spacer-small;
+        }
+      }
+    }
+  }
+}

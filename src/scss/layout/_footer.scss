@@ -1,0 +1,9 @@
+.footer {
+  &__icon {
+    &:link,
+    &:visited {
+      margin: auto;
+      background-color: red;
+    }
+  }
+}
