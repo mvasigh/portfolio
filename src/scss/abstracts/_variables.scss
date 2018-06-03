@@ -2,9 +2,9 @@
 // =======
 $color-white: #fafafa;
 $color-grey-light: #eee;
-$color-grey-medium: #e0e0e0;
-$color-grey-dark: #424242;
-$color-black: #212121;
+$color-grey-medium: #dcdcdc;
+$color-grey-dark: #555;
+$color-black: #262626;
 
 $color-red: #ef5350;
 $color-orange: #ff9800;
@@ -24,10 +24,10 @@ $font-body: 'Roboto', 'Arial', sans-serif;
 $container-width: 88rem;
 
 // Spacers
-$spacer-small: 1.2rem;
-$spacer-medium: 2.4rem;
-$spacer-large: 3.6rem;
-$spacer-huge: 4.8rem;
+$spacer-small: 1.6rem;
+$spacer-medium: 3.2rem;
+$spacer-large: 4.8rem;
+$spacer-huge: 7.2rem;
 
 // Float grid
 $gutter-horizontal: $spacer-medium;
