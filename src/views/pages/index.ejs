@@ -10,7 +10,7 @@
         <hr class="separator separator--black mt-sm mb-md">
         <p class="hero__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum semper tellus, vestibulum lobortis augue consectetur
-          ut. Nam lobortis semper mauris, vel egestas risus euismod in.
+          ut.
         </p>
         <ul class="hero__buttons">
           <li>
@@ -38,14 +38,12 @@
   <section class="section">
     <div class="container">
       <h2 class="section__title">
-        Skills and Knowledge
+        I enjoy building applications for the modern web 
       </h2>
-      <hr class="separator separator--black mb-md mt-sm">
-      <div class="float-row">
-        <div class="col-2-of-3">
+      <hr class="separator separator--black mb-lg mt-sm">
           <p class="mb-md">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, totam illum! Delectus consequatur est, beatae, repellendus
-            exercitationem quam enim autem omnis optio ipsa magnam soluta reprehenderit natus quidem, animi amet.
+            exercitationem quam enim.
           </p>
           <h3 class="section__subtitle mb-sm">Comfortable With</h3>
           <div class="tag-group mb-md">
@@ -63,8 +61,7 @@
               </span>
               <% }) %>
           </div>
-        </div>
-        <div class="col-1-of-3">
+          <!--
           <div class="box box--light">
             <p class="pull-right">
               <a href="https://www.codewars.com/users/vasighm1">
@@ -87,28 +84,27 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+          -->
+
     </div>
   </section>
-  <section class="section">
+  <section class="section pb-xl">
     <div class="container">
       <h2 class="section__title">
-        Projects
+        Here are some projects I've worked on
       </h2>
       <hr class="separator separator--black mb-lg mt-sm">
     </div>
     <% projects.forEach(project => { %>
       <div class="project-card project-card--<%= project.classSuffix %>">
-        <div class="project-card--body">
-          <h2 class="project-card--title">
+        <div class="project-card__body">
+          <h2 class="project-card__title mb-md">
             <%= project.title %>
           </h2>
-          <hr class="separator separator--white mt-sm mb-md">
-          <p class="project-card--description mb-md">
+          <p class="project-card__description mb-md">
             <%= project.description %>
           </p>
-          <div class="project-card--stack mb-sm">
+          <div class="project-card__stack mb-sm">
             <h3 class="section__subtitle mb-sm">Technologies used:</h3>
             <div class="tag-group">
               <% project.stack.forEach(tech => { %>
@@ -127,12 +123,21 @@
       <% }) %>
 
   </section>
-  <section class="section section--footer">
+  <section class="section section--footer pb-xl">
     <div class="container">
       <h2 class="section__title">
-        Contact Me
+        Get in touch with me
       </h2>
       <hr class="separator separator--white mb-lg mt-sm">
+      <div class="float-row">
+        <div class="col-1-of-2">
+          <h3 class="section__subtitle text-right">Interested in working with me?<br>Drop me a line.</h3>
+        </div>
+        <div class="col-1-of-2">
+
+        </div>
+      </div>
+      <p class="text-center mt-lg">Made by Mehdi Vasigh</p>
     </div>
   </section>
 
