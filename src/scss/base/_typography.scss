@@ -1,8 +1,8 @@
 body {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: $font-body;
   font-weight: 400;
-  color: $color-black;
+  color: $color-grey-dark;
 }
 
 p {
@@ -15,7 +15,13 @@ a:visited {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: $font-heading;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $color-black;
 }
