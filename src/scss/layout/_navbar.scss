@@ -1,33 +1,41 @@
 .navbar {
+  display: block;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 99;
+  opacity: 1;
+  transition: all 0.4s;
 
   @include clearfix;
 
   &--hidden {
-    display: none;
+    background-image: linear-gradient(to bottom, rgba($color-white, 0));
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-1rem);
   }
 
   &--light {
     background-image: linear-gradient(
       to bottom,
-      $color-white,
-      rgba($color-white, 0.5) 60%,
-      rgba($color-white, 0)
+      $color-grey-light,
+      rgba($color-grey-light, 0.8) 50%,
+      rgba($color-grey-light, 0)
     );
     color: $color-black !important;
+    animation: fadeOutIn 0.5s;
   }
 
   &--dark {
     background-image: linear-gradient(
       to bottom,
       $color-black,
-      rgba($color-black, 0.5) 60%,
+      rgba($color-black, 0.8) 50%,
       rgba($color-black, 0)
     );
-    color: $color-white !important;
+    animation: fadeOutIn 0.5s;
+    color: $color-grey-light !important;
 
     .btn--icon {
       color: $color-white !important;
