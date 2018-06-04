@@ -1,0 +1,57 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+
+  @include clearfix;
+
+  &--hidden {
+    display: none;
+  }
+
+  &--light {
+    background-image: linear-gradient(
+      to bottom,
+      $color-white,
+      rgba($color-white, 0.5) 60%,
+      rgba($color-white, 0)
+    );
+    color: $color-black !important;
+  }
+
+  &--dark {
+    background-image: linear-gradient(
+      to bottom,
+      $color-black,
+      rgba($color-black, 0.5) 60%,
+      rgba($color-black, 0)
+    );
+    color: $color-white !important;
+
+    .btn--icon {
+      color: $color-white !important;
+    }
+  }
+
+  &__brand {
+    float: left;
+    padding: 1.6rem 0 2.4rem;
+    font-family: $font-heading;
+    font-weight: 800;
+    font-size: 2rem;
+  }
+
+  &__menu {
+    list-style-type: none;
+    float: right;
+    padding: 1.6rem 0 2.4rem;
+  }
+
+  &__menu-item {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: $spacer-small;
+    }
+  }
+}
