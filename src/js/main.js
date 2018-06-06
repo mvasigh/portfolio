@@ -6,25 +6,36 @@ const [
   footerSection
 ] = document.querySelectorAll('.section');
 
-function toggleNavbar() {
-  const topOfSkills = skillsSection.offsetTop;
-  if (window.scrollY > topOfSkills) {
-    navbar.classList.remove('navbar--hidden');
-  } else {
-    navbar.classList.add('navbar--hidden');
-  }
+function debounce(func, wait, immediate) {
+  var timeout;
+  return function() {
+    var context = this,
+      args = arguments;
+    clearTimeout(timeout);
+    timeout = setTimeout(function() {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    }, wait);
+    if (immediate && !timeout) func.apply(context, args);
+  };
 }
 
-function darkenNavbar() {
-  const topOfProjects = projectsSection.children[1].offsetTop;
-  if (window.scrollY > topOfProjects) {
-    navbar.classList.remove('navbar--light');
+function adjustNavbar() {
+  console.count('scroll');
+  const [appearPoint, darkenPoint] = [
+    skillsSection.offsetTop,
+    projectsSection.children[1].offsetTop
+  ];
+  window.scrollY > appearPoint
+    ? navbar.classList.remove('navbar--hidden')
+    : navbar.classList.add('navbar--hidden');
+  if (window.scrollY > darkenPoint) {
     navbar.classList.add('navbar--dark');
+    navbar.classList.remove('navbar--light');
   } else {
     navbar.classList.add('navbar--light');
     navbar.classList.remove('navbar--dark');
   }
 }
 
-window.addEventListener('scroll', toggleNavbar);
-window.addEventListener('scroll', darkenNavbar);
+window.addEventListener('scroll', debounce(adjustNavbar, 15));
