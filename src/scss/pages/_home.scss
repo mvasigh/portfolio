@@ -1,12 +1,16 @@
 .project-card {
   &--dfcguide {
     background-color: rgb(26, 35, 126);
+    background-position: 60% 0%;
+    background-size: cover;
     background-image: linear-gradient(
-        to top right,
-        rgba(26, 35, 126, 1) 30%,
-        rgba(21, 101, 192, 0.75) 100%
+        60deg,
+        rgba(26, 35, 126, 1) 0%,
+        rgba(26, 35, 126, 1) 20%,
+        rgba(26, 35, 126, 0.9) 40%,
+        rgba(21, 101, 192, 0.35) 100%
       ),
-      url('https://www.takeflyte.com/wp-content/uploads/2012/10/bitsec-website.png');
+      url('http://res.cloudinary.com/mvasigh/image/upload/c_scale,w_900/v1528287062/dfcguide_1024.png');
   }
 
   &--hoops {
