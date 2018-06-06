@@ -5,8 +5,7 @@
   "scripts": {
     "build:css": "node-sass ./src/scss/main.scss ./dist/css/style.css",
     "build:js": "browserify ./src/js/main.js > ./dist/js/script.js",
-    "build:html":
-      "ejs-cli --base-dir src/views/pages/ \"*.ejs\" --out dist/ --options ./site.config.json",
+    "build:html": "ejs-cli --base-dir src/views/pages/ \"*.ejs\" --out dist/ --options ./site.config.json",
     "build": "npm run build:js && npm run build:css && npm run build:html",
     "build:watch": "watch \"npm run build\" ./src",
     "start": "parallelshell \"npm run build:watch\" \"live-server ./dist/\""
@@ -16,7 +15,10 @@
   "devDependencies": {
     "browserify": "^16.2.2",
     "ejs-cli": "^2.0.1",
+    "live-server": "^1.2.0",
     "node-sass": "^4.9.0",
+    "parallelshell": "^3.0.2",
     "watch": "^1.0.2"
-  }
+  },
+  "dependencies": {}
 }
