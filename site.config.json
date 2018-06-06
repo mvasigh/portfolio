@@ -12,32 +12,54 @@
       "Git",
       "MongoDB"
     ],
-    "working": ["React", "Redux", "Vue", "Gulp", "Webpack", "PostgreSQL"]
+    "working": [
+      "React",
+      "Redux",
+      "Vue",
+      "Gulp",
+      "Webpack",
+      "PostgreSQL"
+    ]
   },
   "projects": [
     {
       "title": "DFC Guide",
-      "description":
-        "Searchable community resources database and guidebook for health care providers in the Houston area.",
-      "stack": ["Node.js", "Express", "MongoDB", "Bulma", "Sass"],
+      "description": "Searchable community resources database and guidebook for health care providers in the Houston area.",
+      "stack": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Bulma",
+        "Sass"
+      ],
       "repo": "https://github.com/mvasigh/dfc-guide",
-      "live": "http://www.dfcguide.org",
+      "live": "http://dfc-guide.herokuapp.com",
       "classSuffix": "dfcguide"
     },
     {
       "title": "DFC Guide",
-      "description":
-        "Searchable community resources database and guidebook for health care providers in the Houston area.",
-      "stack": ["Node.js", "Express", "MongoDB", "Bulma.io", "Sass"],
+      "description": "Searchable community resources database and guidebook for health care providers in the Houston area.",
+      "stack": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Bulma.io",
+        "Sass"
+      ],
       "repo": "#",
       "live": "#",
       "classSuffix": "dfcguide"
     },
     {
       "title": "DFC Guide",
-      "description":
-        "Searchable community resources database and guidebook for health care providers in the Houston area.",
-      "stack": ["Node.js", "Express", "MongoDB", "Bulma.io", "Sass"],
+      "description": "Searchable community resources database and guidebook for health care providers in the Houston area.",
+      "stack": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Bulma.io",
+        "Sass"
+      ],
       "repo": "#",
       "live": "#",
       "classSuffix": "dfcguide"
