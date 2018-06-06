@@ -21,7 +21,6 @@ function debounce(func, wait, immediate) {
 }
 
 function adjustNavbar() {
-  console.count('scroll');
   const [appearPoint, darkenPoint] = [
     skillsSection.offsetTop,
     projectsSection.children[1].offsetTop
