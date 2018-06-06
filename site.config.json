@@ -1,5 +1,22 @@
 {
   "title": "Mehdi Vasigh | Full-stack web developer",
+  "links": [
+    {
+      "label": "GitHub",
+      "icon": "fab fa-github",
+      "url": "https://github.com/mvasigh"
+    },
+    {
+      "label": "Codepen",
+      "icon": "fab fa-codepen",
+      "url": "https://codepen.io/vasighm/"
+    },
+    {
+      "label": "Email",
+      "icon": "fas fa-envelope",
+      "url": "mailto:mehdivasigh@gmail.com"
+    }
+  ],
   "skills": {
     "comfortable": [
       "JavaScript (ES6+)",

@@ -15,24 +15,14 @@
           ut.
         </p>
         <ul class="hero__buttons">
-          <li>
-            <a href="#" class="btn btn--hero">
-              <i class="fab fa-github"></i>
-              Github
-            </a>
-          </li>
-          <li>
-            <a href="#" class="btn btn--hero">
-              <i class="fab fa-codepen"></i>
-              Codepen
-            </a>
-          </li>
-          <li>
-            <a href="#" class="btn btn--hero">
-              <i class="fas fa-envelope"></i>
-              Email
-            </a>
-          </li>
+          <% links.forEach(link => { %>
+            <li>
+              <a href="<%= link.url %>" class="btn btn--hero">
+                <i class="<%= link.icon %>"></i>
+                <%= link.label %>
+              </a>
+            </li>
+          <% }) %>
         </ul>
       </div>
     </div>

@@ -2,21 +2,13 @@
   <div class="container">
     <div class="navbar__brand">Mehdi Vasigh</div>
     <ul class="navbar__menu">
-      <li class="navbar__menu-item">
-        <a href="#" class="btn btn--icon">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-      <li class="navbar__menu-item">
-        <a href="#" class="btn btn--icon">
-          <i class="fab fa-codepen"></i>
-        </a>
-      </li>
-      <li class="navbar__menu-item">
-        <a href="#" class="btn btn--icon">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
+      <% links.forEach(link => { %>
+        <li class="navbar__menu-item">
+          <a href="<%= link.url %>" class="btn btn--icon">
+            <i class="<%= link.icon %>"></i>
+          </a>
+        </li>
+      <% }) %>
     </ul>
   </div>
 </nav>
