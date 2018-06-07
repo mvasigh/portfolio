@@ -10,9 +10,33 @@
   }
 }
 
+// COLOR
+// -----------------------------
+.text-color {
+  &-black {
+    color: $color-black !important;
+  }
+
+  &-white {
+    color: $color-white !important;
+  }
+
+  &-grey {
+    &-light {
+      color: $color-grey-light !important;
+    }
+    &-medium {
+      color: $color-grey-medium !important;
+    }
+    &-dark {
+      color: $color-grey-dark !important;
+    }
+  }
+}
+
 // TYPOGRAPHY
 // -----------------------------
-.text {
+.text-align {
   &-left {
     text-align: left;
   }
