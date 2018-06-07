@@ -19,6 +19,6 @@
     "node-sass": "^4.9.0",
     "parallelshell": "^3.0.2",
     "watch": "^1.0.2"
-  },
-  "dependencies": {}
+  }
 }
+  
