@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Personal portfolio website",
   "scripts": {
     "build:css": "node-sass ./src/scss/main.scss ./mvasigh.github.io/css/style.css",
