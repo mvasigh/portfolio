@@ -1,5 +1,7 @@
 /node_modules
 /dist
+/temp
+/mvasigh.github.io
 package-lock.json
 .firebaserc
 firebase.json
