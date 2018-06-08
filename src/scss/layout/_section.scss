@@ -20,7 +20,7 @@
   }
 
   &--hero {
-    padding: 0;
+    padding-bottom: $spacer-huge;
     position: relative;
     background-color: $color-grey-light;
     background-image: linear-gradient(
@@ -28,10 +28,6 @@
       $color-grey-medium,
       $color-white
     );
-    height: 84vh;
-    @include for-tablet-portrait-up {
-      height: 45vh;
-    }
   }
   &--footer {
     * {
