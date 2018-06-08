@@ -6,14 +6,11 @@
     <div class="container">
       <div class="hero__body">
         <h1 class="hero__title">
-          <span class="hero__title--main">Mehdi Vasigh</span>
-          <span class="hero__title--sub">Full-stack web developer</span>
+          <span class="hero__title--main"><%= title %></span>
+          <span class="hero__title--sub"><%= subtitle %></span>
         </h1>
         <hr class="separator separator--black mt-sm mb-md">
-        <p class="hero__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum semper tellus, vestibulum lobortis augue consectetur
-          ut.
-        </p>
+        <p class="hero__description text-color-black"><%= description %></p>
         <ul class="hero__buttons">
           <% links.forEach(link => { %>
             <li>
@@ -37,7 +34,7 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, totam illum! Delectus consequatur est, beatae, repellendus
             exercitationem quam enim.
           </p>
-          <h3 class="section__subtitle mb-sm">Comfortable With</h3>
+          <h3 class="section__subtitle mb-sm">Comfortable With:</h3>
           <div class="tag-group mb-md">
             <% skills.comfortable.forEach(skill => { %>
               <span class="tag-group__tag tag-group__tag--light">
@@ -45,7 +42,7 @@
               </span>
               <% }) %>
           </div>
-          <h3 class="section__subtitle mb-sm">Working Knowledge</h3>
+          <h3 class="section__subtitle mb-sm">Working Knowledge:</h3>
           <div class="tag-group">
             <% skills.working.forEach(skill => { %>
               <span class="tag-group__tag tag-group__tag--light">
@@ -82,8 +79,12 @@
             </div>
           </div>
           <div class="project-card--buttons">
-            <a href="<%= project.repo %>" class="btn btn--project mr-sm">View Code</a>
-            <a href="<%= project.live %>" class="btn btn--project">Live Demo</a>
+            <% if (project.repo) { %>
+              <a href="<%= project.repo %>" class="btn btn--project mr-sm">View Code</a>
+            <% } %>
+            <% if (project.live) { %>
+              <a href="<%= project.live %>" class="btn btn--project">Live Demo</a>
+            <% } %>
           </div>
         </div>
       </div>
@@ -98,7 +99,7 @@
       <hr class="separator separator--white mb-md mt-sm">
       <p class="mb-md">I am always interested in new, exciting opportunities. The best way to reach me is by email at <a href="mailto:mehdivasigh@gmail.com">mehdivasigh@gmail.com</a>.</p>
       <p class="text-align-center text-color-grey-medium mt-xl">Made with <i class="fas fa-heart text-color-grey-medium"></i> by Mehdi Vasigh <br/>
-      <a href="#">View this project on GitHub</a>
+      <a href="<%= repo %>">View this project on GitHub</a>
       </p>
     </div>
   </section>
