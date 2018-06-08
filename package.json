@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "description": "Personal portfolio website",
   "scripts": {
-    "build:css": "node-sass ./src/scss/main.scss ./dist/css/style.css",
-    "build:js": "browserify ./src/js/main.js > ./dist/js/script.js",
-    "build:html": "ejs-cli --base-dir src/views/pages/ \"*.ejs\" --out dist/ --options ./site.config.json",
+    "build:css": "node-sass ./src/scss/main.scss ./mvasigh.github.io/css/style.css",
+    "build:js": "browserify ./src/js/main.js > ./mvasigh.github.io/js/script.js",
+    "build:html": "ejs-cli --base-dir src/views/pages/ \"*.ejs\" --out mvasigh.github.io/ --options ./site.config.json",
     "build": "npm run build:js && npm run build:css && npm run build:html",
     "build:watch": "watch \"npm run build\" ./src",
-    "start": "parallelshell \"npm run build:watch\" \"live-server ./dist/\""
+    "start": "parallelshell \"npm run build:watch\" \"live-server ./mvasigh.github.io/\""
   },
   "author": "Mehdi Vasigh",
   "license": "ISC",
@@ -21,4 +21,3 @@
     "watch": "^1.0.2"
   }
 }
-  
