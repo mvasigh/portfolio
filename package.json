@@ -4,7 +4,7 @@
   "description": "Personal website showcasing projects and skills",
   "scripts": {
     "build:css": "node-sass ./src/scss/main.scss ./mvasigh.github.io/css/style.css",
-    "build:js": "browserify ./src/js/main.js > ./mvasigh.github.io/js/script.js",
+    "build:js": "browserify ./src/js/main.js -o ./mvasigh.github.io/js/script.js -t [ babelify --presets [ \"babel-preset-env\" ] ]",
     "build:html": "ejs-cli --base-dir src/views/pages/ \"*.ejs\" --out mvasigh.github.io/ --options ./site.config.json",
     "build": "npm run build:js && npm run build:css && npm run build:html",
     "build:watch": "watch \"npm run build\" ./src",
@@ -13,6 +13,9 @@
   "author": "Mehdi Vasigh",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^8.0.0",
     "browserify": "^16.2.2",
     "ejs-cli": "^2.0.1",
     "live-server": "^1.2.0",
