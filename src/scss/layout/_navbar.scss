@@ -5,7 +5,7 @@
   top: 0;
   z-index: 99;
   opacity: 1;
-  transition: all 0.6s;
+  transition: all 0.3s;
 
   @include clearfix;
 
@@ -23,8 +23,11 @@
       rgba($color-white, 1) 50%,
       rgba($color-white, 0)
     );
-    color: $color-black !important;
     transition-delay: background-image 0.2s;
+    color: $color-black !important;
+    .btn--icon {
+      color: $color-black !important;
+    }
   }
 
   &--dark {

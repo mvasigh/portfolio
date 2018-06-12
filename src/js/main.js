@@ -20,10 +20,10 @@ function debounce(func, wait, immediate) {
   };
 }
 
-function adjustNavbar() {
+const adjustNavbar = () => {
   const [appearPoint, darkenPoint] = [
     skillsSection.offsetTop,
-    projectsSection.children[1].offsetTop
+    projectsSection.children[1].offsetTop - navbar.offsetHeight
   ];
   window.scrollY > appearPoint
     ? navbar.classList.remove('navbar--hidden')
@@ -35,6 +35,6 @@ function adjustNavbar() {
     navbar.classList.add('navbar--light');
     navbar.classList.remove('navbar--dark');
   }
-}
+};
 
 window.addEventListener('scroll', debounce(adjustNavbar, 15));
