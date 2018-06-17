@@ -10,7 +10,7 @@
           <span class="hero__title--sub"><%= subtitle %></span>
         </h1>
         <hr class="separator separator--black mt-sm mb-md">
-        <p class="hero__description text-color-black"><%= description %></p>
+        <p class="hero__description text-color-black"><%= description %> <a class="text-color-grey-dark" href="<%= resume %>" target="_blank">Resume (PDF) &rarr;</a></p>
         <ul class="hero__buttons">
           <% links.forEach(link => { %>
             <li>
@@ -31,10 +31,9 @@
       </h2>
       <hr class="separator separator--black mb-lg mt-sm">
           <p class="mb-md">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, totam illum! Delectus consequatur est, beatae, repellendus
-            exercitationem quam enim.
+            I use my strong knowledge of JavaScript, CSS3 and HTML5 fundamentals to develop fast and responsive applications. My goal is to continue to learn and expand my knowledge and toolset in order to employ the most appropriate tools for any given project. 
           </p>
-          <h3 class="section__subtitle mb-sm">Comfortable With:</h3>
+          <h3 class="section__subtitle mb-sm">Proficient</h3>
           <div class="tag-group mb-md">
             <% skills.comfortable.forEach(skill => { %>
               <span class="tag-group__tag tag-group__tag--light">
@@ -42,7 +41,7 @@
               </span>
               <% }) %>
           </div>
-          <h3 class="section__subtitle mb-sm">Working Knowledge:</h3>
+          <h3 class="section__subtitle mb-sm">Exposure</h3>
           <div class="tag-group">
             <% skills.working.forEach(skill => { %>
               <span class="tag-group__tag tag-group__tag--light">
