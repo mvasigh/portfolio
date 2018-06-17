@@ -1,9 +1,11 @@
 {
   "title": "Mehdi Vasigh",
-  "subtitle": "Full-stack web developer",
+  "subtitle": "Web Developer",
   "description":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum semper tellus, vestibulum lobortis augue consectetur ut.",
+    "I am an experienced developer with front-end and back-end skills, and a passion for problem solving and learning new technologies.",
   "repo": "https://github.com/mvasigh/portfolio-website",
+  "resume":
+    "https://res.cloudinary.com/mvasigh/image/upload/v1529255023/jun_2018_resume.pdf",
   "links": [
     {
       "label": "GitHub",
@@ -26,16 +28,17 @@
     "subtitle": "",
     "comfortable": [
       "JavaScript (ES6+)",
+      "React",
       "Node.js",
       "Express",
       "CSS3",
       "Sass",
       "HTML5",
+      "MongoDB",
       "NPM",
-      "Git",
-      "MongoDB"
+      "Git"
     ],
-    "working": ["React", "Redux", "Vue.js", "Gulp", "Webpack", "PostgreSQL"]
+    "working": ["Redux", "Vue.js", "Gulp", "Webpack", "PostgreSQL"]
   },
   "projects": [
     {
@@ -48,6 +51,15 @@
       "classSuffix": "dfcguide"
     },
     {
+      "title": "Personal Website",
+      "description":
+        "Static website showcasing my projects and skills, built using a custom static site generator",
+      "stack": ["NPM", "Sass", "EJS"],
+      "repo": "https://github.com/mvasigh/portfolio-website",
+      "live": "https://mvasigh.github.io",
+      "classSuffix": "portfolio"
+    },
+    {
       "title": "Stat Sheet",
       "description":
         "Basketball player statistics comparison application using the MySportsFeeds API",
@@ -56,13 +68,12 @@
       "classSuffix": "statsheet"
     },
     {
-      "title": "Personal Website",
+      "title": "Peak Produce",
       "description":
         "Static website showcasing my projects and skills, built using a custom static site generator",
-      "stack": ["NPM", "Sass", "EJS"],
-      "repo": "https://github.com/mvasigh/portfolio-website",
-      "live": "https://mvasigh.github.io",
-      "classSuffix": "portfolio"
+      "stack": ["Vue.js", "Bulma", "Webpack", "Sass"],
+      "live": "https://peakproduce.us",
+      "classSuffix": "peakproduce"
     }
   ]
 }
