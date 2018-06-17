@@ -70,7 +70,7 @@
     {
       "title": "Peak Produce",
       "description":
-        "Static website showcasing my projects and skills, built using a custom static site generator",
+        "Static website designed for a local distributor of fresh produce",
       "stack": ["Vue.js", "Bulma", "Webpack", "Sass"],
       "live": "https://peakproduce.us",
       "classSuffix": "peakproduce"
