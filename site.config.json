@@ -65,6 +65,7 @@
         "Basketball player statistics comparison application using the MySportsFeeds API",
       "stack": ["Node.js", "Express", "React", "Sass"],
       "repo": "https://github.com/mvasigh/stat-sheet",
+      "live": "http://stat-sheet.herokuapp.com/",
       "classSuffix": "statsheet"
     },
     {
